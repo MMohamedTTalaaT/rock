@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+  <title>Rock Paper Scissors</title>
+    <link rel="icon" href="98-985146_close-hand-emoji-hd-png-download-removebg-preview.png">
+
+<style>
+    button 
+    {
+        background-color: rgb(37, 37, 37);
+        border-style: solid;
+        border-color: white;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 100px;
+        cursor: pointer;
+    }
+    .img 
+    {
+        background-color: rgb(37, 37, 37);
+        width: 250px;
+        height: 250px;
+        border-color: rgb(37, 37, 37); 
+        border-style: solid;
+        border-width: 10px;
+        border-radius: 10px;
+    }
+
+    body 
+    {
+        background-color: rgb(37, 37, 37); 
+        color: white;
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+</style>
+  </head>
+
+
+  <body>
+    <center>
+    <p>Rock Paper Scissors</p>
+    <p>By:Mohamed TalaaT</p>
+    <button onclick="
+    const randomNumber = Math.random();
+    let  computerMove = '';
+    if (randomNumber >= 0 && randomNumber <1/3) 
+    {
+     computerMove = 'Rock';
+    } 
+    else if (randomNumber >= 1/3 && randomNumber < 2/3) 
+    {
+     computerMove = 'Paper';
+    } 
+    else if (randomNumber >= 2/3 && randomNumber < 3/3) 
+    {
+     computerMove = 'Scissors';
+    }
+
+
+    let result = '';
+
+    if (computerMove === 'Rock') 
+    {
+      result = 'Tie.';
+    } else if (computerMove === 'Paper') 
+    {
+      result = 'You Lose.';
+    } else if (computerMove === 'Scissors') 
+    {
+      result = 'You Win.';
+    }
+
+    alert(`You picked Rock.Computer picked ${computerMove}. ${result}`);
+
+    "><img class="img" src="98-985146_close-hand-emoji-hd-png-download-removebg-preview.png"></button>
+
+
+    <button onclick="
+    let random = Math.random();
+
+    if(random >= 0 && random < 1/3)
+    {
+      computerMove = 'Rock'
+    }
+    else if (random >=1/3 && random < 2/3) 
+    {
+      computerMove= 'Paper'
+    }
+    else if (random >= 2/3 && random < 3/3) 
+    {
+      computerMove = 'Scissors'
+    }
+    
+    let result1 = '';
+
+    if (computerMove === 'Scissors') 
+    {
+      result1='You Lose.'
+    }
+    else if (computerMove === 'Rock') 
+    {
+      result1='You Win.'
+    }
+    else if (computerMove === 'Paper') 
+    {
+      result1='Tie.'
+    }
+    alert(`You picked Paper.Computer picked ${computerMove}. ${result1}`);
+    "><img class="img" src="emoji-high-five-hand-gesture-thumb-signal-sign-of-the-horns-finger-smiley-yellow-png-clipart-removebg-preview.png"></button>
+
+
+
+
+    <button onclick="
+    let Computer = '';
+    let ran = Math.random();
+
+    if (ran >= 0 && ran < 1/3) 
+    {
+     com = 'Rock'
+    }
+    else if (ran >= 1/3 && ran < 2/3) 
+    {
+      com = 'Paper'
+    }
+    else if (ran >= 2/3 && ran < 3/3) 
+    {
+      com = 'Scissors'
+    }
+
+    let result2 = '';
+    if (com === 'Scissors') 
+    {
+      result2 = 'Tie.'
+    } 
+    else if (com === 'Rock') 
+    {
+      result2 ='You Lose.'
+    }
+    else if (com === 'Paper') 
+    {
+      result2 = 'You Win.'
+    }
+    
+    alert(`You picked Scissors.Computer picked ${com}. ${result2}`);
+
+    
+    "><img class="img" src="kisspng-emoji-peace-symbols-v-sign-fingers-5ab5e11f736694.5174678715218690874727-removebg-preview.png"></button>
+
+</center>
+<script>
+
+</script>
+
+  </body>
+</html>
